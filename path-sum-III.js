@@ -13,5 +13,7 @@
  */
  var pathSum = function(root, targetSum) {
 
-  
+    const map = {0:1}
+    let totalPath = 0
+    
 };
