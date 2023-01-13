@@ -17,5 +17,13 @@
     let totalPath = 0
     findPathSum(root, 0)
     return totalPath
-    
+    function findPathSum(node, sum){
+        if(!node) return null
+        let cumulativeSum = node.val + sum
+        if(map[cumulativeSum - targetSum]){
+            totalPath += map[cumulativeSum - targetSum]
+        }
+
+        
+    }
 };
