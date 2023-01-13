@@ -23,6 +23,10 @@
         if(map[cumulativeSum - targetSum]){
             totalPath += map[cumulativeSum - targetSum]
         }
+        map[cumulativeSum] = ++map[cumulativeSum] || 1
+        findPathSum(node.left, cumulativeSum)
+        findPathSum(node.right, cumulativeSum)
+        map[cumulativeSum] = --map[cumulativeSum]
 
         
     }
