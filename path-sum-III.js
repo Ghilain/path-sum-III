@@ -27,7 +27,10 @@
         findPathSum(node.left, cumulativeSum)
         findPathSum(node.right, cumulativeSum)
         map[cumulativeSum] = --map[cumulativeSum]
-
+        if(!map[cumulativeSum]){
+            //      to free the memory        
+                delete map[cumulativeSum]
+            }
         
     }
 };
