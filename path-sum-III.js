@@ -15,5 +15,7 @@
 
     const map = {0:1}
     let totalPath = 0
+    findPathSum(root, 0)
+    return totalPath
     
 };
